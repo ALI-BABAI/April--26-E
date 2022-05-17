@@ -3,11 +3,11 @@
 <!-- С помощью строки снизу все гиперссылки откроются в новом окне -->
 <!-- <base target="blank"> -->
 
-    <head><h3 align="center" id="top">A game for the PS4 - "The last  of us 2</h3></head>
+    <head><h3 align="center" id="to">A game for the PS4 - "The last  of us 2</h3></head>
     
-<!-- Открытие меню, с гиперссылкой в новом окне -->
+<!-- Открытие меню, с гиперссылкой в новом окне  -->
 <!-- <nav>
-    <details align="right">
+    <details open align="right">
     <Summary align="right">Menu</Summary>
      <a href="https://www.avito.ru/ulyanovsk/igry_pristavki_i_programmy/igra_dlya_pristavki_odni_iz_nas_2_ps4_2374938462" target="_blank">Chapter 1</a><br>
     Chapter 2
@@ -18,19 +18,29 @@
 <!-- Открытие меню с гиперссылкой в этом же окне прописывается через: -->
 <!--   <a href="https://..." target="_self"> </a> -->
     <nav>
-    <details align="right">
+    <details  align="right">
+    <!-- Меню при открытие сайта открывается автоматически - -> details + OPEN 
+    <details open align="right">-->
     <Summary align="right">Menu</Summary>
     <a href="https://www.avito.ru/ulyanovsk/igry_pristavki_i_programmy/igra_dlya_pristavki_odni_iz_nas_2_ps4_2374938462">Chapter 1</a><br>
+    <!-- Оператор {BR} для сноса строки -->
     <a href="IMG/TLOU2.png" type="photo/png">Save Chapter 2</a><br>
-    <a href="Pokki.mp3" type="audio/mp3" target="blank">Save track </a>
+    <!-- Открытие в новом окне через Оператор {TARGET} -->
+    <a href="Pokki.mp3" type="audio/mp3" target="blank">Save track </a> <br>    
     <!-- Put a Video on html -->
     <!-- <a href="Pokki.mp4" type="video/mp4" target="blank">Save track </a> -->
     
     
+    <!-- как добавить функцию сохранения файла в новом окне -->
+    <!-- <a href="IMG/TLOU2.png" type="photo/png" download="IMG/TLOU2.png" target="blank">Save photo </a>      -->
+    
+    
     </details></nav>
     
-    <figure>
-        <img src="IMG/TLOU2.png" alt="TLOU2" width="250" height="300">
+    <figure> 
+        <img src="IMG/TLOU2.png" alt="TLOU2" width="250px" height="300">   
+        <!-- ЗАЧЕМ ТУТ alt="TLOU2" 
+            - для того что картинка может не ввестись, и вместо картинки будет альтернативный текст -->
         <figcaption>Front side of Disc</figcaption>
     </figure>
     
@@ -59,7 +69,7 @@
         <p align="justify">1</p>
         <p align="justify">1</p>
         <p align="justify">1</p>
-        <p align="justify">1</p>
+        <p align="justify" id="top">1</p>
         <p align="justify">1</p>
         <p align="justify">1</p>
         <p align="justify">1</p>
@@ -78,9 +88,14 @@
         <p align="justify">1</p>
         <p align="justify"></p>
 
-        <a href="#top" align="right">Go to the top of the page</a>
+
+        <!-- Якорь - так называемый переход в начало / верхушку сайта 
+        (точнее направит туда, где стоит id="top" -- как в кавычках записано не имеет значения)
+        -->
+        <a href="#to" align="justify">Go to the top of the page</a>
         
         <p> <h4>Contacts</h4></p>
+        <!-- список {OL} - нумерованный -->
         <ol>
         <li> ali-babai</li>
         <li>8-800-666-66-66</li>
