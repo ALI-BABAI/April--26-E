@@ -1,0 +1,43 @@
+ul {
+    list-style: square;
+}
+
+
+/* list.class
+{
+   list-style: decimal-leading-zero;
+} */
+
+
+ol {
+    list-style: upper-roman;
+    color: rgb(47, 176, 18);
+}
+
+.class {
+    list-style: decimal;
+}
+
+.list1 {
+    list-style: decimal-leading-zero;
+    color: black;
+}
+
+span {
+    font-weight: bold;
+}
+
+h4 {
+    text-transform: uppercase;
+    text-decoration-line: underline;
+}
+
+body {
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+nav {
+    font-family: cursive;
+}
